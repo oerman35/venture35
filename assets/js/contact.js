@@ -1,13 +1,13 @@
 ﻿document.getElementById('contact-form').addEventListener('submit', function (event) {
     event.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+    const name = document.getElementById('name').value.toString();
+    const email = document.getElementById('email').value.toString();
+    const message = document.getElementById('message').value.toString();
 
     const data = {
-        'name': name,
-        'email': email,
-        'message': message
+        "name": name,
+        "email": email,
+        "message": message
     };
 
     console.log('data', data);
