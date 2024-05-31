@@ -12,7 +12,7 @@
 
     console.log('data', data);
 
-    fetch('https://webhook.site/8a4cba53-bd90-4735-970f-a4348c811eab', {
+    fetch('https://maker.ifttt.com/trigger/venture35_contact_form/json/with/key/deaGSAOp-rqf60HoumGb8T', {
         method: 'POST',
         headers: {
             "Accept": "application/json, text/plain, */*",
