@@ -4,22 +4,20 @@
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    const data = {
-        name: name,
-        email: email,
-        message: message
-    };
-
     fetch('https://maker.ifttt.com/trigger/venture35_contact_form/json/with/key/deaGSAOp-rqf60HoumGb8T', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data)
+        body: {
+            name: name,
+            email: email,
+            message: message
+        }
     })
         .then(response => response.json())
         .then(json => {
-            alert('Your message has been sent!');
+            alert('Thank you for your message! You\'ll hear from me soon.');
             document.getElementById('contact-form').reset();
         })
         .catch(error => {
