@@ -1,8 +1,8 @@
 ﻿document.getElementById('contact-form').addEventListener('submit', function (event) {
     event.preventDefault();
-    const name = document.getElementById('name').value.toString();
-    const email = document.getElementById('email').value.toString();
-    const message = document.getElementById('message').value.toString();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
 
     const data = {
         "name": name,
@@ -15,7 +15,8 @@
     fetch('https://maker.ifttt.com/trigger/venture35_contact_form/json/with/key/deaGSAOp-rqf60HoumGb8T', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/json;charset=utf-8"
         },
         body: JSON.stringify(data)
     })
