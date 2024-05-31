@@ -10,9 +10,9 @@
             'Content-Type': 'application/json'
         },
         body: {
-            name: name,
-            email: email,
-            message: message
+            'name': name,
+            'email': email,
+            'message': message
         }
     })
         .then(response => response.json())
