@@ -1238,11 +1238,11 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		margin: 0;
-		position: absolute;
-		top: 50%;
-		-ms-transform: translateY(-50%);
-		transform: translateY(-50%);
+		/*margin: 0;*/
+		/*position: absolute;*/
+		/*top: 50%;*/
+		/*-ms-transform: translateY(-50%);*/
+		/*transform: translateY(-50%);*/
 		
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -1316,10 +1316,7 @@ input, select, textarea {
 			max-width: 100%;
 		}
 
-			#header .content .inner {
-				margin-left: 350px;
-				margin-right: 350px;
-				
+			#header .content .inner {				
 				-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
 				-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
 				-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
